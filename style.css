@@ -9,17 +9,9 @@
     position: relative;
 }
 
-/* .logo {
-    color: red;
-    width: auto;
-    max-height: 100%;
-    vertical-align: middle;
-} */
 
-/* img {
-    vertical-align: middle;
-    border-style: none; 
-} */
+
+
 
 .main_menu {
     list-style: none;
@@ -27,15 +19,15 @@
     justify-content: space-around;
     align-content: center;
     color: white;
-    
+
 }
 
-.main_menu > li > a {
+.main_menu>li>a {
     color: white;
     text-decoration: none;
 }
 
-.socialmedia > a {
+.socialmedia>a {
     color: white;
     text-decoration: none;
 }
@@ -50,13 +42,13 @@
     color: red;
 }
 
-.carousel-content{
+.carousel-content {
     position: absolute;
     color: white;
     /* z-index: 20; */
     bottom: 34%;
     text-align: center;
-    left:22.5rem;
+    left: 22.5rem;
 }
 
 
@@ -74,21 +66,116 @@
 }
 
 .carousel-btn {
-color:rgb(252, 167, 181);
-font-size: 12px;
-font-weight: 500;
-border: none;
-font-family: montserrat;
+    color: rgb(252, 167, 181);
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    font-family: "montserrat";
 
-} 
+}
 
-/* .wrap-header {
+/* SECTION 2 */
+
+.section-2 {
+    padding-top: 120px;
+    padding-bottom: 105px;
+    background-color: #EFEFEF;
+}
+
+.section-2-flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    
+    flex-direction: column;
+}
+
+
+
+.fa-long-arrow-right {
+    color: red;
+    size: 2px;
+
+}
+
+/* SECTION 3 */
+
+.section-3-image {
+    background-image: url(./Images/section-3\ photo.jpg);
+    background-position: center 6.33333px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 60vh;
+}
+
+
+.section-3-content {
+    text-align: center;
+
+    padding-top: 7rem;
+}
+
+.section-3-content h3 {
+    color: red;
+    font-family: "courgette";
+
+}
+
+.section-3-content h2 {
+    font-family: "poppins";
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+
+/* SECTION 4 */
+
+.section-header {
+    text-decoration: none;
+    font-family: poppins;
+    color: black;
+    letter-spacing: 6px;
+}
+
+
+.learn-more4 {
+    margin-top: 4rem;
+    text-decoration: none;
+    font-family: montserrat;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.799);
+    letter-spacing: 2px;
+}
+
+.story>a {
+    text-decoration: none;
+}
+
+/* not responding */
+.learn-more4 :hover {
+    color: red;
+}
+
+/* not responding */
+/* .story>.learn-more4 :hover { 
+    color: red;
 } */
+
+.story>h3 {
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.story>h3 :hover {
+    color: red;
+}
+
+.fa-long-arrow-right {
+    color: black;
+}
+
+.story>p {
+    font-family: montserrat;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.799);
+}
