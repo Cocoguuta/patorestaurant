@@ -110,7 +110,7 @@
 }
 
 .section-3-content h3 {
-    color: red;
+    color: #D61C22;
     font-family: "courgette";
 
 }
@@ -252,7 +252,6 @@ padding: 10px 0px;
 
 .booking-btn {
     margin-left: 21rem;
-    margin-top: -3rem;
     border-radius: 25px;   
     padding: 0px 10px;
     
@@ -286,3 +285,185 @@ webkit-outer-spin-button {
 }
 
 /* SECTION 8 */
+
+
+/* SECTION 9 */
+.section-9-image {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./Images/bg-cover-video-02.jpg);
+background-position: center top;
+background-attachment: fixed;
+background-size: cover;
+min-height: 100vh;
+}
+
+.section-9 {
+padding-top: 18rem;
+}
+
+
+.dot {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.fa-play {
+position: absolute;
+margin-left: 29px;
+top: 1.4rem;
+}
+
+.play-btn {
+    margin-left: 40rem;
+    margin-top: 2rem;
+}
+
+.play-btn:hover {
+    background-color: #D61C22;
+}
+
+.red {
+    color: black;
+}
+
+.red:hover {
+color: white;
+}
+
+
+/* SECTION 10 */
+
+.section-10 h2 {
+    color: black;
+    padding-bottom: 4rem;
+}
+
+.blog {
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.last-image-section-10 {
+    margin-top: -0.1rem;
+}
+
+.last-image-section-10 h3{
+    width: 120%;
+}
+
+.date-blog-post {
+position: absolute;
+font-family: montserrat;
+font-size: 12px;
+bottom: 0.5px;
+border-radius: 5px;
+left: 8px;
+padding: 3px 15px;
+background-color: rgba(20, 19, 19, 0.399);
+}
+
+/* SECTION 11 */
+
+.section-11 {
+    margin-top: 3rem;
+    background-color: #EFEFEF;
+    min-height: 40vh;
+    padding-top: 5.5rem;
+}
+
+.section-11 h3 { 
+font-size: 23px;
+font-family: montserrat;
+letter-spacing: 1px;
+margin-top: 1rem;
+font-weight: 500;
+
+}
+
+.section-11-content {
+justify-content: center;
+align-items: center;
+}
+
+
+.fa-envelope {
+    right: 10px;
+    bottom: 20px;
+
+}
+
+.sign-up-btn2 {
+   padding: 0px 30px;
+   border-radius: 5px;
+   font-size: 13px;
+}
+
+
+.email-address {
+background-color: #D61C22;
+}
+
+.section-11-form {
+    font-size: 16px;
+} 
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.862);
+    color: white;
+}
+
+footer h4 {
+    font-family: poppins;
+    font-size: 18px;
+    width: 110%;
+}
+
+footer p {
+    font-family: montserrat;
+    font-size: 12px;
+    width: 110%;
+}
+
+.footer-content {
+align-items: center;
+justify-content: center;
+}
+
+.footer-contact-us {
+}
+
+.colorlib{
+    color: #D61C22;
+    font-size: 12px;
+    font-family: montserrat;
+}
+
+.link {
+    color: #D61C22;
+}
+
+.footer-icons {
+    font-size: 14px;
+    font-family: montserrat; 
+}
+
+.footer-gallery {
+    
+}
+
+.gallery-1 {
+    margin-bottom: 5px;
+}
+
+.gallery-2 {
+    margin-bottom: 5px;
+}
