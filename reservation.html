@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;1,8..144,100;1,8..144,200&family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <section>
+        <div class="redline">
+        </div>
+    </section>
+
+
+    <nav class="navbar fixed-top border bg-transparent">
+        <div class="container">
+            <a class="navbar-brand mt-2 ml-2" href="#">
+                <img src="/Images/logo black.png" alt="logo" width="110" height="50">
+            </a>
+
+            <ul class="main_menu col-lg-9 mt-4">
+                <li>
+                    <a aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="menu.html">MENU</a>
+                </li>
+                <li>
+                    <a href="reservation.html">RESERVATION</a>
+                </li>
+                <li>
+                    <a href="gallery.html">GALLERY</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+            <div class="socialmedia main_menu col-lg-1 mt-2">
+                <a href="#" <i class="fa-brands fa-instagram m-l-21"></i>
+                    </i>
+                </a>
+                <a href="#" <i class="fa fa-facebook m-l-21">
+                    </i>
+                </a>
+                <a href="#" <i class="fa fa-twitter m-l-21">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- SECTION 1 -->
+
+    <section>
+        <div class="reservation-section-1-img w-100">
+            <h2>RESERVATION</h2>
+        </div>
+    </section>
+
+
+    <!-- SECTION 2 -->
+
+    <section class="section-2">
+        <div class="container">
+            <div class="reservation-section-2-header">
+                <h3>Reservation</h3>
+                <h2>BOOK TABLE</h2>
+            </div>
+
+
+            <form class="reservation-form rounded col-lg-6 mt-3 mx-auto">
+                <div class="reservation-row d-flex flex-md-row flex-lg-row flex-sm-col gap-4">
+                    <div>
+                        <div>
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="calender" class="form-control sizefull">
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="position-relative">
+                            <label for="time">Time</label>
+                            <input class="form-control" name="hour" id="time">
+                            <select class="time position-absolute" id="timeslot">
+                                <option selected value="hours">9.00</option>
+                                <option value="1">9.00</option>
+                                <option value="2">9.30</option>
+                                <option value="3">10.00</option>
+                                <option value="4">10.30</option>
+                                <option value="5">11.00</option>
+                                <option value="6">11.30</option>
+                                <option value="7">12.00</option>
+                                <option value="8">12.30</option>
+                                <option value="9">13.00</option>
+                                <option value="10">13.30</option>
+                                <option value="11">14.00</option>
+                                <option value="12">14.30</option>
+                                <option value="13">15.00</option>
+                                <option value="14">15.30</option>
+                                <option value="15">16.00</option>
+                                <option value="16">16.30</option>
+                                <option value="17">17.00</option>
+                                <option value="18">17.30</option>
+                                <option value="19">18.00</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="position-relative">
+                            <label for="people">People</label>
+                            <input class="form-control" id="people" name="guests">
+                            <select class="people position-absolute" id="guest-numbers">
+                                <option selected value="persons">1 person</option>
+                                <option value="1">1 person</option>
+                                <option value="2">2 person</option>
+                                <option value="3">3 person</option>
+                                <option value="4">4 person</option>
+                                <option value="5">5 person</option>
+                                <option value="6">6 person</option>
+                                <option value="7">7 person</option>
+                                <option value="8">8 person</option>
+                                <option value="9">9 person</option>
+                                <option value="10">10 person</option>
+                                <option value="11">11 person</option>
+                                <option value="12">12 person</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex reservation-row flex-md-row flex-lg-row flex-sm-col gap-4">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" name="flname" placeholder="Name">
+                    </div>
+
+                    <div>
+                        <label for="tel">Phone</label>
+                        <input type="tel" id="tel" class="form-control" name="telephone" placeholder="Phone">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" name="emails" placeholder="Email">
+                    </div>
+                </div>
+
+
+                <button type="submit" class="btn booking-btn2 px-4 py-1 bg-dark">
+                    <a href="#">BOOK TABLE</a>
+                </button>
+            </form>
+
+
+
+            <div class="reservation-booking d-flex">
+                <div class="event-booking">
+                    <h4>RESERVE BY PHONE</h4>
+                    <p>Donec quis euismod purus. Donec feugiat ligula rhoncus, varius nisl sed, tincidunt lectus. Nulla
+                        vulputate , lectus vel volutpat efficitur, orci lacus sodales sem, sit amet quam: <span
+                            class="reservation-phone">(001) 345 6889</span> </p>
+                </div>
+
+
+                <div class="event-booking">
+                    <h4>FOR EVENT BOOKING</h4>
+                    <p>Donec feugiat ligula rhoncus: <span class="reservation-phone">(001) 345 6889</span> , varius nisl
+                        sed, tinci-dunt lectus sodales sem.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container footer-content pt-5 pb-5 d-flex gap-5 flex-lg-row flex-sm-column flex-md-column">
+            <div class="footer-contact-us footer-header">
+                <h4>CONTACT US</h4>
+                <p> <span class="footer-icons"><i class="fa fa-map-marker"></i></span> 8th floor, 379 Hudson St, New
+                    York, NY
+                    10018</p>
+                <p> <span class="footer-icons"><i class="fa fa-phone"></i></span> (+1) 96 716 6879</p>
+                <p> <span class="footer-icons"><i class="fa fa-envelope"></i></span> contact@site.com</p>
+
+                <div class="opening-times pt-4">
+                    <h4>OPENING TIMES</h4>
+                    <p>09:30 AM – 11:00 PM</p>
+                    <p>Every Day</p>
+                </div>
+            </div>
+
+            <div class="footer-twitter footer-header">
+                <h4>LATEST TWITTER</h4>
+                <p><i class="fa fa-twitter"> <span class="colorlib">@colorlib</span></i></p>
+                <p>Activello is a good option. It has a slider built into that displays the featured image in the
+                    slider. <span class="link">https://buff.ly/2zaSfAQ</span>
+                </p>
+                <p><span class="footer-date">21 Dec 2017</span></p>
+
+                <div>
+                    <p><i class="fa fa-twitter"> <span class="colorlib">@colorlib</span></i></p>
+                    <p>
+                        Activello is a good option. It has a slider built into that displays. <span
+                            class="link">https://buff.ly/2zaSfAQ</span>
+                    </p>
+                    <p><span class="footer-date">21 Dec 2017</span></p>
+                </div>
+            </div>
+
+            <div class="footer-gallery footer-header col-lg-4 col-md-4 col-sm-1 col-xl-6">
+                <h4>GALLERY</h4>
+                <div class="gallery-1">
+                    <img src="./Images/spices.jpg" alt="blog-image" width=85>
+                    <img src="./Images/fire meat.jpg" alt="blog-image" width=85>
+                    <img src="./Images/night cars.jpg" alt="blog-image" width=85>
+                    <img src="./Images/bread.jpg" alt="blog-image" width=85>
+                </div>
+
+                <div class="gallery-2">
+                    <img src="./Images/3 glasses.jpg" alt="blog-image" width=85>
+                    <img src="./Images/cake cherry.jpg" alt="blog-image" width=85>
+                    <img src="./Images/steak.jpg" alt="blog-image" width=85>
+                    <img src="./Images/one chef in kitchen.jpg" alt="blog-image" width=85>
+                </div>
+
+                <div class="gallery-3">
+                    <img src="./Images/plate of food.jpg" alt="blog-image" width=85>
+                    <img src="./Images/fish.jpg" alt="blog-image" width=85>
+                    <img src="./Images/small shrimp.jpg" alt="blog-image" width=85>
+                    <img src="./Images/xmas ball.jpg" alt="blog-image" width=85>
+                </div>
+            </div>
+    </footer>
+
+
+    <!-- POST FOOTER -->
+
+    <section class="bg-dark">
+        <div class="container post-footer d-flex flex-lg-row flex-md-row flex-sm-column pt-5">
+            <div class="socialmedia-footer main_menu col-lg-1 mt-2">
+                <a href="#" <i class="fa-brands fa-instagram m-l-21"></i>
+                    </i>
+                </a>
+                <a href="#" <i class="fa fa-facebook m-l-21">
+                    </i>
+                </a>
+                <a href="#" <i class="fa fa-twitter m-l-21">
+                    </i>
+                </a>
+            </div>
+            <p class="colorlib-theme-post-footer">
+                @ 2017 Colorlib. <a href="#" class="get-the-theme">Get The Theme</a>
+            </p>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/4785e1ca13.js" crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>
