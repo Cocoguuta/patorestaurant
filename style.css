@@ -4,11 +4,25 @@
     box-sizing: border-box;
 }
 
+/* NAV BAR  */
+
 .redline {
     border-top: 5px solid red;
-    position: relative;
+    position: sticky;
 }
 
+
+
+.nav-bar .fixed-top {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.nav-bar .fixed-top--scrolled {
+    background-color: #F4F1EB;
+    color: #eb2f36;
+}
 
 .main_menu {
     list-style: none;
@@ -22,6 +36,10 @@
 .main_menu>li>a {
     color: white;
     text-decoration: none;
+}
+
+.main_menu>li>a:hover {
+    color: #eb2f36;
 }
 
 .socialmedia>a {
@@ -218,17 +236,87 @@
 
 /* SECTION 5 */
 .section-5 {
-    background-color: #EFEFEF;
+    background-color: #F5F2EC;
+    padding-bottom: 10rem;
+    text-align: center;
+
 }
+
+.section-5-header h3 {
+    color: #D61C22;
+    font-family: "courgette";
+    padding-top: 8rem;
+}
+
+.section-5-header h2 {
+    font-family: "poppins";
+    color: rgba(0, 0, 0, 0.846);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    padding-bottom: 3rem;
+}
+
+
+.lunch-menu button {
+    font-family: poppins;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 23px;
+    opacity: 0.9;
+    margin-left: 7rem;
+    padding: 12px 27px !important;
+}
+
+/* .happyhour button {
+    margin-left: ;
+} */
+
+
+.happyhour-dessert {
+    margin-top: 2rem;
+}
+
+
+
+.menu-btn {
+    text-decoration: none;
+    color: #333333;
+}
+
+.menu-btn:hover {
+    color: white;
+    background-color: #eb2f36;
+}
+
 
 
 /* SECTION 6 */
 
+.section-6 {
+    padding-bottom: 10rem;
+
+}
+
 .carousel-header {
-    color: white;
-    /* bottom: 70%; */
     text-align: center;
 }
+
+.carousel-header h3 {
+    color: #D61C22;
+    font-family: "courgette";
+    padding-top: 8rem;
+}
+
+.carousel-header h2 {
+    font-family: "poppins";
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    padding-bottom: 3rem;
+}
+
 
 .woman-drinking {
     width: 550px;
@@ -266,19 +354,42 @@
     margin-left: 6rem;
 }
 
-section-7-form {
-    padding: 10px 0px;
+.section-7-form label {
     font-family: montserrat;
+    color: #666666;
+    font-size: 14px;
+}
+
+.section-7-form input {
+    padding: 12px 30px !important;
+    font-family: montserrat !important;
+    font-size: 14px;
+    border: 2px solid #ded8d8 !important;
+    border-radius: 10px;
+}
+
+.section-7-form input:focus {
+    border: 2px solid #eb2f36 !important;
+    box-shadow: none;
 
 }
 
-input [type=text] {
-    border: 4px solid gainsboro;
+.section-7-form input:focus::-webkit-input-placeholder {
+    opacity: 0;
 }
 
+.people {
+    bottom: 22px;
+    font-family: montserrat;
+    border-radius: 5px;
+    padding: 2px 7px;
+}
 
-.hours {
-    padding: 10px 0px;
+.time {
+    bottom: 22px;
+    font-family: montserrat;
+    border-radius: 5px;
+    padding: 2px 7px;
 }
 
 .section-7-image {
@@ -287,43 +398,115 @@ input [type=text] {
     border-radius: 20px;
 }
 
-
-
 .booking-btn {
-    margin-left: 21rem;
-    border-radius: 25px;
-    padding: 0px 10px;
-
-
-}
-
-.booking-btn>a {
+    border-radius: 8px;
+    padding: 6px 26px;
     color: white;
     text-decoration: none;
     font-family: montserrat;
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-left: 13rem;
+    margin-top: 2rem;
+    border: none;
+}
+
+.trans-0-4 {
+    transition: all 0.4s;
 }
 
 
-.booking-btn>a:hover {
-    background-color: #D61C22;
+.booking-btn:hover {
+    background-color: #D61C22 !important;
 }
 
-.people {
-    bottom: 12px;
-}
-
-.time {
-    bottom: 12px;
-
-}
 
 input::webkit-outer-spin-button,
 webkit-outer-spin-button {
     caret: none;
 }
 
+
 /* SECTION 8 */
+
+.section-8 {
+    min-height: 100vh;
+}
+
+.section-8-header {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.section-8-header h3 {
+    font-family: courgette;
+    color: #D61C22;
+}
+
+.section-8-header h2 {
+    font-family: poppins;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.chef {
+    display: block;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #D61C22;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+
+}
+
+.section-8 p {
+    text-align: center;
+    font-family: poppins;
+    font-size: 17px;
+    color: #666666;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-8 h5 {
+    font-family: montserrat;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+}
+
+
+.stars {
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    color: #eb2f36;
+
+}
+
+.small-dot {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(149, 147, 147, 0.5);
+}
+
+.tiny {
+    margin-left: 34rem;
+    /* width: 50%;
+    margin-left: auto;
+ margin-right: auto;  */
+}
+
 
 
 /* SECTION 9 */
@@ -436,19 +619,48 @@ webkit-outer-spin-button {
 
 }
 
+
+.section-11-form input {
+    padding: 12px 30px !important;
+    font-family: montserrat !important;
+    font-size: 14px;
+    border: 2px solid #ded8d8 !important;
+    border-radius: 10px;
+}
+
+.section-11-form input [type=email] :focus {
+    border: 2px solid #eb2f36 !important;
+    box-shadow: none;
+
+}
+
+.section-11-form input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+
 .sign-up-btn2 {
-    padding: 0px 30px;
+    padding: 6px 26px;
     border-radius: 5px;
     font-size: 13px;
+    padding: 10px 30px;
+    font-family: montserrat;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    border: none;
+
 }
 
 
-.email-address {
-    background-color: #D61C22;
+.trans-0-4 {
+    transition: all 0.4s;
 }
 
-.section-11-form {
-    font-size: 16px;
+
+.sign-up-btn2:hover {
+    background-color: #D61C22 !important;
 }
 
 
@@ -640,6 +852,7 @@ footer p {
 
 .tiny-dots {
     border-bottom: 2px dotted rgba(0, 0, 0, 0.512);
+    height: 11rem;
     width: 11rem;
     letter-spacing: 1rem;
     display: inline-block;
@@ -788,13 +1001,35 @@ footer p {
 }
 
 
-input [type=date] {
-    border: 4px solid gainsboro;
+
+.reservation-form label {
+    font-family: montserrat;
+    color: #666666;
+    font-size: 14px;
 }
+
+.reservation-form input {
+    padding: 12px 40px !important;
+    font-family: montserrat !important;
+    font-size: 14px;
+    border: 2px solid #ded8d8 !important;
+    border-radius: 10px;
+}
+
+.reservation-form input:focus {
+    border: 2px solid #eb2f36 !important;
+    box-shadow: none;
+
+}
+
+.reservation-form input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+
 
 .booking-btn2 {
     margin-top: 1rem;
-    margin-left: 13.5rem;
     margin-bottom: 3rem;
 }
 
@@ -802,7 +1037,15 @@ input [type=date] {
     color: white;
     text-decoration: none;
     font-size: 13px;
+}
 
+.trans-0-4 {
+    transition: all 0.4s;
+}
+
+
+.booking-btn2:hover {
+    background-color: #D61C22 !important;
 }
 
 .hours {
@@ -851,7 +1094,6 @@ input [type=date] {
     font-weight: 500;
     font-size: 15px;
     color: #333333;
-    text-transform: uppercase;
     letter-spacing: 2px;
     outline: none;
     border: none;
@@ -859,8 +1101,8 @@ input [type=date] {
     overflow: visible;
 }
 
-.active {
-    background-color: #111111;
+.label-gallery:hover {
+    background-color: #333333;
     color: white;
 }
 
@@ -871,6 +1113,7 @@ input [type=date] {
 
 .gallery-section-2 {
     margin-top: 7rem;
+    margin-bottom: 7rem;
 }
 
 .wrap-label-gallery {
@@ -895,66 +1138,50 @@ input [type=date] {
     margin-top: 5rem;
 }
 
+.anchor-tag-for-photo:hover {
+    background-color: #eb2f36;
+
+}
+
 /* pagination */
+
+.pagination {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .item-pagination {
     display: inline-block;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    color: #666666;
-    position: relative;
-}
-
-.pagination>a {
-    position: absolute;
-    color: red;
-    text-decoration: none;
-    margin-left: 3px;
-}
-
-/* .wrap-gallery{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.item-gallery {
-    width: 200px;
-    height: 200px;
-}
-
-.hov-img-zoom {
-    display: block;
-    overflow: hidden;
-} */
-
-/* .overlay-item-gallery {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(236,29,37,0.8);
-    opacity: 0;
-} */
-
-
-/* .btn-show-gallery {
-    font-size: 18px;
-    color: #222222;
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: white;
-} */
+    border: 1px solid #b2adad;
+    padding-top: 4px;
+    text-align: center;
+    color: #666666;
+    text-decoration: none;
+}
 
-/* PAGINATION */
 
-/* .pagination{
-list-style: none;
-border-radius: 0.25rem;} */
+.flex-w {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.item-pagination:hover {
+    color: white;
+    background-color: #333333;
+}
+
+.active {
+    color: white !important;
+}
+
+
+
 
 /* ABOUT US */
 
@@ -1021,7 +1248,7 @@ border-radius: 0.25rem;} */
 
 }
 
-.about us h3 {
+.about-us h3 {
     margin-bottom: 3rem;
 }
 
@@ -1244,18 +1471,17 @@ border-radius: 0.25rem;} */
 
 /* SECTION 3 */
 
-/* left column */
-
-.left-column {
-    column-count: 2;
-    
-} 
-
-.left-section {
-    border-right: 2px solid #D61C22;
+.section-borderline {
+    border-right: 1px solid #ded8d8;
     padding-top: 5rem;
-    margin-right: -0.5rem;
+    padding-bottom: 3rem;
+    margin-right: 1rem;
 
+}
+
+.blog-img {
+    border-radius: 10px;
+    width: 95%;
 }
 
 .blog-date {
@@ -1282,10 +1508,6 @@ border-radius: 0.25rem;} */
     font-size: 12px;
 }
 
-.blog-img {
-    border-radius: 10px;
-}
-
 .blog-article-titles h3 {
     padding-top: 2rem;
     font-size: 27px;
@@ -1300,7 +1522,9 @@ border-radius: 0.25rem;} */
     font-size: 12px;
     color: #b2adad;
     padding-bottom: 2px;
+    width: 95% !important;
 }
+
 
 .blog-article-titles p:nth-child(3) {
     color: #666666;
@@ -1335,47 +1559,21 @@ border-radius: 0.25rem;} */
     color: #D61C22;
 }
 
-.champagne {
-    width: 74%;
-}
-
-.page-dots {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background-color: transparent;
-    color: white;
-    border-radius: 50%;
-    border: 1px solid #b2adade6;
-}
-
-.circle-2 {
-    color: black !important;
-}
-
-
-.page-number {
-    padding-left: 14px;
-    z-index: 1;
-    padding-top: 21px;
-    text-decoration: none;
-    font-family: montserrat;
-}
 
 .active {
     color: white;
     background-color: #111111;
 }
 
+
 /* Right column */
 
-/* .right-side-blog {
-    columns: ;
-} */
+/* SEARCH FORM  */
 
 .search-form {
     align-items: center;
     margin-bottom: 4rem;
+    margin-top: 3.5rem;
 
 }
 
@@ -1405,12 +1603,13 @@ border-radius: 0.25rem;} */
     font-size: 23px;
     letter-spacing: 2px;
     color: #111111e2;
+    padding-bottom: 1rem;
+
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-left: -2rem;
 }
 
 .categories li {
@@ -1418,6 +1617,7 @@ ul {
     font-size: 13px;
     letter-spacing: 2px;
     color: #666666;
+
 }
 
 .line-categories {
@@ -1443,21 +1643,26 @@ ul {
     letter-spacing: 2px;
     color: #111111e2;
     margin-top: 3rem;
-} 
+    margin-bottom: 2rem;
+}
 
 .most-popular-img {
-    width: 58%;
-    height: 4rem;
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
+    /* vertical-align: middle; */
+    margin-top: 1.5rem;
+
+
 }
 
 .most-popular h5 {
     font-family: montserrat;
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 11px;
+    letter-spacing: 2px;
     font-weight: 600;
     margin-top: 1rem;
-    color: #666666;
+    color: #333333;
 }
 
 .most-popular p {
@@ -1467,9 +1672,13 @@ ul {
 }
 
 .most-popular-list {
-    align-content: center;
-    width: 35%;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+
 
 .blog-popular-post {
     text-decoration: none;
@@ -1480,21 +1689,7 @@ ul {
     color: #eb2f36;
 }
 
-.penultimate-photo {
-    width:75%;
-}
 
-.penultimate-photo-text {
-    margin-left: 1.3rem;
-}
-
-.last-photo {
-    width:100%;
-}
-
-.last-photo-text {
-    margin-left: 2.5rem;
-}
 
 
 /* archive */
@@ -1505,6 +1700,8 @@ ul {
     letter-spacing: 2px;
     color: #111111e2;
     margin-top: 3rem;
+    padding-bottom: 1rem;
+
 }
 
 .archive-months {
@@ -1512,20 +1709,81 @@ ul {
     justify-content: space-between;
     font-size: 12px;
     font-family: montserrat;
-    width: 20%;
+    width: 100%;
 }
 
+
 /* BLOG ARTICLE  */
+
+.border-line-for-post-page {
+    padding-bottom: 7rem;
+    /* note: this is in addition to original section-7 code */
+}
+
+.leave-comment-header {
+    margin-top: 5rem;
+}
+
+.leave-comment-header h3 {
+    font-family: poppins;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.leave-comment-header p {
+    font-family: montserrat;
+    font-size: 15px;
+    color: #666666;
+}
+
 
 .blog-article {
     width: 97% !important;
 }
 
-.contact-for-post {
-flex-direction: column;
-width: 20%;
-gap: 1rem;
+.section-7-form textarea {
+    font-family: montserrat;
+    font-size: 14px;
+    border: 2px solid #ded8d8;
+    width: 95%;
 }
+
+.section-7-form textarea:focus {
+    border: 2px solid #eb2f36 !important;
+    box-shadow: none !important;
+
+}
+
+.section-7-form textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+
+.section-7-form input {
+    padding: 12px 30px !important;
+    font-family: montserrat !important;
+    font-size: 14px;
+    border: 2px solid #ded8d8 !important;
+    border-radius: 10px;
+}
+
+.section-7-form input:focus {
+    border: 2px solid #eb2f36 !important;
+    box-shadow: none !important;
+
+}
+
+.section-7-form input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.flex-name-email-website {
+    flex-direction: column;
+    width: 40%;
+}
+
 
 .comment-btn {
     margin-top: 2rem;
@@ -1539,5 +1797,5 @@ gap: 1rem;
     color: white;
     font-family: montserrat;
     font-size: 13px;
-    
+
 }

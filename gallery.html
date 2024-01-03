@@ -22,7 +22,7 @@
     </section>
 
 
-    <nav class="navbar fixed-top border bg-transparent">
+    <nav class="navbar fixed-top border-bottom bg-transparent">
         <div class="container">
             <a class="navbar-brand mt-2 ml-2" href="#">
                 <img src="/Images/logo black.png" alt="logo" width="110" height="50">
@@ -78,8 +78,8 @@
     <!-- SECTION 2 -->
 
     <section class="container gallery-section-2">
-        <div class="wrap-label-gallery flex-w flex-sb-m m-l-r-auto flex-col-c-sm">
-            <button class="label-gallery txt26 active" data-filter="*">
+        <div class="wrap-label-gallery trans-0-4 flex-w flex-sb-m m-l-r-auto flex-col-c-sm">
+            <button class="label-gallery active" data-filter="*">
                 ALL PHOTOS
             </button>
             <button class="label-gallery trans-0-4" data-filter=".interior">
@@ -97,10 +97,12 @@
         </div>
 
         <!-- PHOTOS -->
-        <div class="gallery-photos-all">
+        <div class="gallery-photos-all trans-0-4">
             <div class="gallery-images">
                 <div>
-                    <img src="./Images/cake.jpg" alt="menu" class="w-100">
+                    <a class="anchor-tag-for-photo trans-0-4" href="blog.html">
+                        <img src="./Images/cake.jpg" alt="menu" class="w-100">
+                    </a>
                 </div>
 
                 <div>
@@ -125,7 +127,9 @@
 
             <div class="gallery-images">
                 <div>
-                    <img src="./Images/Shrimps.jpg" alt="menu" class="w-100">
+                    <a class="anchor-tag-for-photo trans-0-4" href=" blog.html">
+                        <img src="./Images/Shrimps.jpg" alt="menu" class="w-100">
+                    </a>
                 </div>
                 <div>
                     <img src="./Images/flowers.jpg" alt="menu" class="w-100">
@@ -136,29 +140,15 @@
             </div>
 
 
-            <div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
+            <div class="pagination trans-0-4 flex-c-m flex-w gap-4">
                 <a href="#" class="item-pagination flex-c-m trans-0-4 active">1</a>
                 <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
                 <a href="#" class="item-pagination flex-c-m trans-0-4">3</a>
             </div>
 
-        </div>
 
 
-        <!-- <div class="item-gallery">
-                <img src="images/cheers.jpg" alt="IMG-GALLERY">
-                <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                    <a class="btn-show-gallery fa fa-search" href="images/cheers.jpg" data-lightbox="gallery">
-                    </a>
-                </div>
-            </div>
-        
         </div>
-        <div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
-            <a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
-            <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
-            <a href="#" class="item-pagination flex-c-m trans-0-4">3</a>
-        </div> -->
 
 
     </section>
@@ -173,16 +163,19 @@
                 <h3>SPECIALS SIGN UP</h3>
             </div>
 
-            <form php="#" class="d-flex gap-4">
+            <form action="#php" class="section-11-form d-flex gap-3 col-lg-4 col-md-4 flex-sm-col">
                 <div class="position-relative">
-                    <label for="email" name="email"></label>
-                    <input type="email" placeholder="Email Address"
-                        class="section-11-form form-control-lg border border-light border-2" id="email-addy">
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Email Address"
+                        class="form-control-lg" id="email-addy">
                     <i class="fa fa-envelope position-absolute"></i>
+
                 </div>
 
-                <button type="submit" class="sign-up-btn2 bg-dark text-light">SIGN-UP</button>
-
+                <div class="wrap-btn-booking">
+                    <button type="submit" class="sign-up-btn2 bg-dark trans-0-4" href="#">SIGN-UP
+                    </button>
+                </div>
             </form>
         </div>
     </section>

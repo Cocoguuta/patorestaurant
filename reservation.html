@@ -85,68 +85,65 @@
             </div>
 
 
-            <form class="reservation-form rounded col-lg-6 mt-3 mx-auto">
-                <div class="reservation-row d-flex flex-md-row flex-lg-row flex-sm-col gap-4">
-                    <div>
-                        <div>
-                            <label for="date">Date</label>
-                            <input type="date" id="date" name="calender" class="form-control sizefull">
-                        </div>
+            <form action="#php" class="reservation-form rounded mt-3 d-flex flex-column">
 
-                    </div>
+                <div class="d-flex reservation-row flex-md-row flex-lg-row flex-sm-col gap-4">
 
                     <div>
-                        <div class="position-relative">
-                            <label for="time">Time</label>
-                            <input class="form-control" name="hour" id="time">
-                            <select class="time position-absolute" id="timeslot">
-                                <option selected value="hours">9.00</option>
-                                <option value="1">9.00</option>
-                                <option value="2">9.30</option>
-                                <option value="3">10.00</option>
-                                <option value="4">10.30</option>
-                                <option value="5">11.00</option>
-                                <option value="6">11.30</option>
-                                <option value="7">12.00</option>
-                                <option value="8">12.30</option>
-                                <option value="9">13.00</option>
-                                <option value="10">13.30</option>
-                                <option value="11">14.00</option>
-                                <option value="12">14.30</option>
-                                <option value="13">15.00</option>
-                                <option value="14">15.30</option>
-                                <option value="15">16.00</option>
-                                <option value="16">16.30</option>
-                                <option value="17">17.00</option>
-                                <option value="18">17.30</option>
-                                <option value="19">18.00</option>
-                            </select>
-                        </div>
-
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="calender" value="03/01/2024" class="form-control">
                     </div>
 
-                    <div>
-                        <div class="position-relative">
-                            <label for="people">People</label>
-                            <input class="form-control" id="people" name="guests">
-                            <select class="people position-absolute" id="guest-numbers">
-                                <option selected value="persons">1 person</option>
-                                <option value="1">1 person</option>
-                                <option value="2">2 person</option>
-                                <option value="3">3 person</option>
-                                <option value="4">4 person</option>
-                                <option value="5">5 person</option>
-                                <option value="6">6 person</option>
-                                <option value="7">7 person</option>
-                                <option value="8">8 person</option>
-                                <option value="9">9 person</option>
-                                <option value="10">10 person</option>
-                                <option value="11">11 person</option>
-                                <option value="12">12 person</option>
-                            </select>
-                        </div>
+                    <div class="position-relative">
+                        <label for="time">Time</label>
+                        <input class="form-control bg-transparent" name="hour" id="time" disabled>
+                        <select class="time position-absolute" id="timeslot">
+                            <option selected value="hours">9.00</option>
+                            <option value="1">9.00</option>
+                            <option value="2">9.30</option>
+                            <option value="3">10.00</option>
+                            <option value="4">10.30</option>
+                            <option value="5">11.00</option>
+                            <option value="6">11.30</option>
+                            <option value="7">12.00</option>
+                            <option value="8">12.30</option>
+                            <option value="9">13.00</option>
+                            <option value="10">13.30</option>
+                            <option value="11">14.00</option>
+                            <option value="12">14.30</option>
+                            <option value="13">15.00</option>
+                            <option value="14">15.30</option>
+                            <option value="15">16.00</option>
+                            <option value="16">16.30</option>
+                            <option value="17">17.00</option>
+                            <option value="18">17.30</option>
+                            <option value="19">18.00</option>
+                        </select>
                     </div>
+
+
+                    <div class="position-relative">
+                        <label for="people">People</label>
+                        <input class="form-control bg-transparent" id="people" name="guests" disabled>
+                        <select class="people position-absolute" id="guest-numbers">
+                            <option selected value="persons">1 person</option>
+                            <option value="1">1 person</option>
+                            <option value="2">2 person</option>
+                            <option value="3">3 person</option>
+                            <option value="4">4 person</option>
+                            <option value="5">5 person</option>
+                            <option value="6">6 person</option>
+                            <option value="7">7 person</option>
+                            <option value="8">8 person</option>
+                            <option value="9">9 person</option>
+                            <option value="10">10 person</option>
+                            <option value="11">11 person</option>
+                            <option value="12">12 person</option>
+                        </select>
+                    </div>
+
                 </div>
+                
 
                 <div class="d-flex reservation-row flex-md-row flex-lg-row flex-sm-col gap-4">
                     <div>
@@ -166,7 +163,7 @@
                 </div>
 
 
-                <button type="submit" class="btn booking-btn2 px-4 py-1 bg-dark">
+                <button type="submit" class="btn trans-0-4 booking-btn2 px-4 py-1 bg-dark">
                     <a href="#">BOOK TABLE</a>
                 </button>
             </form>

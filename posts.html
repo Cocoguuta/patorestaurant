@@ -85,10 +85,10 @@
 
     <!-- SECTION 2 -->
     <section>
-        <div class="container">
+        <div class="container section-3-blog">
             <div class="row">
                 <div class="col-md-8 col-lg-9">
-                    <div class="left-section">
+                    <div class="section-borderline border-line-for-post-page">
                         <div class="blog-date position-absolute">
                             <h2>28</h2>
                             <p>Dec, 2018</p>
@@ -116,264 +116,268 @@
 
 
                         </div>
-                    </div>
 
 
-                    <!-- right column  -->
-                    <!-- SEARCH BAR -->
-                    <div class="right-side-blog col-md-4 col-lg-3">
+                        <!-- LEAVE A COMMENT -->
 
-                        <form class="search-form d-flex" action="action_page.php">
+                        <div class="leave-comment-header">
+                            <h3>LEAVE A COMMENT</h3>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                        </div>
+
+                        <form action="#php" class="section-7-form">
                             <div>
-                                <label for="text" name="text"></label>
-                                <input type="text" placeholder="Search" class="form-control" id="search-bar">
+                                <label for="text"></label>
+                                <textarea id="message" class="form-control bo-rad-10" rows="7" name="messages"
+                                    placeholder="Comment..."></textarea>
                             </div>
 
-                            <div>
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </div>
-
-                        </form>
-
-
-                        <!-- Categories -->
-                        <div>
-                            <div class="categories">
-                                <h3>CATEGORIES</h3>
-                                <ul>
-                                    <span class="line-categories"></span>
-                                    <li><a class="blog-category" href="posts.html">COOKING RECIPE</a></li>
-                                    <span class="line-categories"></span>
-                                    <li><a class="blog-category" href="menu.html">
-                                    <li>DELICIOUS FOODS</a></li>
-                                    <span class="line-categories"></span>
-                                    <li><a class="blog-category" href="posts.html">
-                                    <li>EVENTS DESIGN</a></li>
-                                    <span class="line-categories"></span>
-                                    <li><a class="blog-category" href="gallery.html">
-                                    <li>RESTAURANT PLACE</a></li>
-                                    <span class="line-categories"></span>
-                                    <li><a class="blog-category" href="posts.html">WORDPRESS</a></li>
-                                    <span class="line-categories"></span>
-                                    <li><a class="blog-category" href="blog.html">
-                                    <li>MOST POPULAR</a></li>
-                                    <span class="line-categories"></span>
-                                </ul>
-                            </div>
-
-
-                            <!-- Most popular -->
-
-                            <div>
-                                <div class="most-popular">
-                                    <h3>MOST POPULAR</h3>
-
-                                    <ul>
-                                        <li class="most-popular-list d-flex">
-                                            <div>
-                                                <img src="./Images/blog-01.jpg" alt="blog-image"
-                                                    class="fluid most-popular-img">
-                                            </div>
-
-                                            <div>
-                                                <h5><a class="blog-popular-post" href="gallery.html">BEST PLACES FOR
-                                                        WINE</a>
-                                                </h5>
-                                                <p>3 days ago</p>
-                                            </div>
-                                        </li>
-
-
-                                        <li class="most-popular-list d-flex">
-                                            <div>
-                                                <img src="./Images/blog-02.jpg" alt="blog-image"
-                                                    class="fluid most-popular-img">
-                                            </div>
-
-                                            <div>
-                                                <h5>CHOCOLATE</h5>
-                                                <p>8 days ago</p>
-                                            </div>
-                                        </li>
-
-
-                                        <li class="most-popular-list d-flex">
-                                            <div>
-                                                <img src="./Images/blog-03.jpg" alt="blog-image"
-                                                    class="fluid most-popular-img">
-                                            </div>
-
-                                            <div>
-                                                <h5>STYLE THE WEDDING PARTY</h5>
-                                                <p>1 Jan, 2023</p>
-                                            </div>
-                                        </li>
-
-
-                                        <li class="most-popular-list d-flex">
-                                            <div>
-                                                <img src="./Images/blog-06.jpg" alt="blog-image"
-                                                    class="fluid most-popular-img penultimate-photo">
-                                            </div>
-
-                                            <div class="penultimate-photo-text">
-                                                <h5>COOKING RECIPE DELICIOUS</h5>
-                                                <p>23 Dec, 2018</p>
-                                            </div>
-                                        </li>
-
-
-                                        <li class="most-popular-list d-flex">
-                                            <div>
-                                                <img src="./Images/blog-15.jpg" alt="blog-image"
-                                                    class="fluid most-popular-img last-photo">
-                                            </div>
-
-                                            <div class="last-photo-text">
-                                                <h5>PIZZA IS PREPARED FRESH</h5>
-                                                <p>25 Dec, 2017</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-
+                            <div class="contact-form d-flex flex-name-email-website flex-md-col flex-lg-col flex-sm-col">
+                                <div>
+                                    <label for="name"></label>
+                                    <input type="text" id="name" class="form-control" name="flname" placeholder="Name*">
                                 </div>
 
+                                <div>
+                                    <label for="email"></label>
+                                    <input type="email" id="email" class="form-control" name="emails"
+                                        placeholder="Email*">
+                                </div>
+
+                                <div>
+                                    <label for="text"></label>
+                                    <input type="text" id="website" class="form-control" name="website-address"
+                                        placeholder="Website*">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn comment-btn px-5 py-2 bg-dark">
+                                <a href="#">POST COMMENT</a>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- right column  -->
+                <!-- SEARCH BAR -->
+                <div class="right-side-blog col-md-4 col-lg-3">
+
+                    <form class="search-form d-flex" action="action_page.php">
+                        <div>
+                            <label for="text" name="text"></label>
+                            <input type="text" placeholder="Search" class="form-control" id="search-bar">
+                        </div>
+
+                        <div>
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+
+                    </form>
+
+
+                    <!-- Categories -->
+                    <div>
+                        <div class="categories">
+                            <h3>CATEGORIES</h3>
+                            <ul>
+                                <span class="line-categories"></span>
+                                <li><a class="blog-category" href="posts.html">COOKING RECIPE</a></li>
+                                <span class="line-categories"></span>
+                                <li><a class="blog-category" href="menu.html">
+                                <li>DELICIOUS FOODS</a></li>
+                                <span class="line-categories"></span>
+                                <li><a class="blog-category" href="posts.html">
+                                <li>EVENTS DESIGN</a></li>
+                                <span class="line-categories"></span>
+                                <li><a class="blog-category" href="gallery.html">
+                                <li>RESTAURANT PLACE</a></li>
+                                <span class="line-categories"></span>
+                                <li><a class="blog-category" href="posts.html">WORDPRESS</a></li>
+                                <span class="line-categories"></span>
+                                <li><a class="blog-category" href="blog.html">
+                                <li>MOST POPULAR</a></li>
+                                <span class="line-categories"></span>
+                            </ul>
+                        </div>
+
+
+                        <!-- Most popular -->
+
+                        <div>
+                            <div class="most-popular">
+                                <h3>MOST POPULAR</h3>
+
+                                <ul>
+                                    <li class="most-popular-list d-flex">
+                                        <div class="popular-list-header">
+                                            <img src="./Images/blog-11.jpg" alt="blog-image"
+                                                class="fluid most-popular-img">
+                                        </div>
+
+                                        <div class="popular-list-header">
+                                            <h5><a class="blog-popular-post" href="gallery.html">
+                                                    BEST PLACES FOR WINE</a>
+                                            </h5>
+                                            <p>3 days ago</p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="most-popular-list d-flex">
+                                        <div>
+                                            <img src="./Images/blog-12.jpg" alt="blog-image"
+                                                class="fluid most-popular-img">
+                                        </div>
+
+                                        <div class="popular-list-header">
+                                            <h5>CHOCOLATE AND CAKES</h5>
+                                            <p>8 days ago</p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="most-popular-list d-flex">
+                                        <div>
+                                            <img src="./Images/blog-13.jpg" alt="blog-image"
+                                                class="fluid most-popular-img">
+                                        </div>
+
+                                        <div class="popular-list-header">
+                                            <h5>STYLE THE WEDDING PARTY</h5>
+                                            <p>1 Jan, 2023</p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="most-popular-list d-flex">
+                                        <div>
+                                            <img src="./Images/blog-14.jpg" alt="blog-image"
+                                                class="fluid most-popular-img">
+                                        </div>
+
+                                        <div class="popular-list-header">
+                                            <h5>COOKING RECIPE DELICIOUS</h5>
+                                            <p>23 Dec, 2018</p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="most-popular-list d-flex">
+                                        <div class="popular-list-header">
+                                            <img src="./Images/blog-15.jpg" alt="blog-image"
+                                                class="fluid most-popular-img">
+                                        </div>
+
+                                        <div class="last-photo-text">
+                                            <h5>PIZZA IS PREPARED FRESH</h5>
+                                            <p>25 Dec, 2017</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
                             </div>
 
                         </div>
 
-
-                        <!-- <Archives -->
-
-                        <div>
-                            <div class="archive">
-                                <h3>ARCHIVE</h3>
-                                <ul>
-                                    <li class="archive-months d-flex">
-                                        <div>
-                                            <p><a class="blog-popular-post" href="gallery.html">AUGUST 2018</a></p>
-                                        </div>
-
-                                        <div>
-                                            <p>(1)</p>
-                                        </div>
-                                    </li>
+                    </div>
 
 
-                                    <li class="archive-months d-flex">
-                                        <div>
-                                            <p><a class="blog-popular-post" href="gallery.html">JULY 2018</a></p>
-                                        </div>
+                    <!-- <Archives -->
 
-                                        <div>
-                                            <p>(9)</p>
-                                        </div>
-                                    </li>
+                    <div>
+                        <div class="archive">
+                            <h3>ARCHIVE</h3>
+                            <ul>
+                                <li class="archive-months d-flex">
+                                    <div>
+                                        <p><a class="blog-popular-post" href="gallery.html">AUGUST 2018</a></p>
+                                    </div>
 
-
-                                    <li class="archive-months d-flex">
-                                        <div>
-                                            <p><a class="blog-popular-post" href="blog.html">JUNE 2018</a></p>
-                                        </div>
-
-                                        <div>
-                                            <p>(18)</p>
-                                        </div>
-                                    </li>
+                                    <div>
+                                        <p>(1)</p>
+                                    </div>
+                                </li>
 
 
-                                    <li class="archive-months d-flex">
-                                        <div>
-                                            <p><a class="blog-popular-post" href="blog.html"> MAY 2018</a></p>
-                                        </div>
+                                <li class="archive-months d-flex">
+                                    <div>
+                                        <p><a class="blog-popular-post" href="gallery.html">JULY 2018</a></p>
+                                    </div>
 
-                                        <div>
-                                            <p>(2)</p>
-                                        </div>
-                                    </li>
-
-
-                                    <li class="archive-months d-flex">
-                                        <div>
-                                            <p><a class="blog-popular-post" href="blog.html">APRIL 2018</a></p>
-                                        </div>
-
-                                        <div>
-                                            <p>(9)</p>
-                                        </div>
-                                    </li>
+                                    <div>
+                                        <p>(9)</p>
+                                    </div>
+                                </li>
 
 
-                                    <li class="archive-months d-flex">
-                                        <div>
-                                            <p><a class="blog-popular-post" href="blog.html">MARCH 2018</a></p>
-                                        </div>
+                                <li class="archive-months d-flex">
+                                    <div>
+                                        <p><a class="blog-popular-post" href="blog.html">JUNE 2018</a></p>
+                                    </div>
 
-                                        <div>
-                                            <p>(6)</p>
-                                        </div>
-                                    </li>
+                                    <div>
+                                        <p>(18)</p>
+                                    </div>
+                                </li>
 
 
-                                    <li class="archive-months d-flex">
-                                        <div>
-                                            <p><a class="blog-popular-post" href="menu.html">FEBRUARY 2018</a></p>
-                                        </div>
+                                <li class="archive-months d-flex">
+                                    <div>
+                                        <p><a class="blog-popular-post" href="blog.html"> MAY 2018</a></p>
+                                    </div>
 
-                                        <div>
-                                            <p>(29)</p>
-                                        </div>
-                                    </li>
+                                    <div>
+                                        <p>(2)</p>
+                                    </div>
+                                </li>
 
-                                </ul>
-                            </div>
+
+                                <li class="archive-months d-flex">
+                                    <div>
+                                        <p><a class="blog-popular-post" href="blog.html">APRIL 2018</a></p>
+                                    </div>
+
+                                    <div>
+                                        <p>(9)</p>
+                                    </div>
+                                </li>
+
+
+                                <li class="archive-months d-flex">
+                                    <div>
+                                        <p><a class="blog-popular-post" href="blog.html">MARCH 2018</a></p>
+                                    </div>
+
+                                    <div>
+                                        <p>(6)</p>
+                                    </div>
+                                </li>
+
+
+                                <li class="archive-months d-flex">
+                                    <div>
+                                        <p><a class="blog-popular-post" href="menu.html">FEBRUARY 2018</a></p>
+                                    </div>
+
+                                    <div>
+                                        <p>(29)</p>
+                                    </div>
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
                 </div>
 
             </div>
+
         </div>
 
     </section>
 
-    <section class="container">
-        <div>
-            <h3>LEAVE A COMMENT</h3>
-            <p>Your email address will not be published. Required fields are marked *</p>
-        </div>
 
 
-
-        <form action="#php">
-
-            <div>
-                <label for="text" class="message-form-heading"></label>
-                <textarea id="message" class="form-control bo-rad-10" rows="9"
-                    name="messages" placeholder="Comment..."></textarea><br>
-            </div>
-
-            <div class="contact-form d-flex contact-for-post flex-md-col flex-lg-col flex-sm-col">
-                <div>
-                    <label for="name" class="form-heading">Name</label>
-                    <input type="text" id="name" class="form-control" name="flname" placeholder="Name*">
-                </div>
-
-                <div>
-                    <label for="email" class="form-heading">Email</label>
-                    <input type="email" id="email" class="form-control" name="emails" placeholder="Email*">
-                </div>
-
-                <div>
-                    <label for="text" class="form-heading">Website</label>
-                    <input type="text" id="website" class="form-control" name="website-address" placeholder="Website*">
-                </div>
-            </div>
-
-            <button type="submit" class="btn comment-btn px-5 py-2 bg-dark">
-                <a href="#">POST COMMENT</a>
-            </button>
-        </form>
-    </section>
 
 
 
